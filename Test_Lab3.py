@@ -28,3 +28,22 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def  test_bubble_sort_large():
+    input_arr = [20,10,34,56,78,90,16,88,19,220,300,240]
+    result= Lab3.bubble_sort(input_arr,Lab3.SORT_ASCENDING)
+    assert(result==1)
+
+def test_bubble_sort_empty():
+    input_arr=[]
+    result=Lab3.bubble_sort(input_arr,Lab3.SORT_ASCENDING)
+    assert (result==0)
+
+def test_bubble_sort_int():
+    input_arr=[4.6,1,2,3,4]
+    result=Lab3.bubble_sort(input_arr,Lab3.SORT_ASCENDING)
+    assert (result==2)
+
+
+
+
