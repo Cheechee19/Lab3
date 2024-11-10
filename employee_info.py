@@ -22,7 +22,11 @@ def calculate_average_salary():
     total = 0
     average = 0
 
-    #add your implementation to calculate here
+    length= len(employee_data)
+    for salary in employee_data:
+        total += salary["salary"]
+
+    average=total/length
 
 
     return average
